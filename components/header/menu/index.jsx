@@ -6,18 +6,12 @@ import ListElement from "./link";
 const menu = [
   {
     title: "Projects",
-    description: "To See Everything",
-    images: ["projects1.jpg", "projects2.jpg"],
   },
   {
-    title: "Agence",
-    description: "To Learn Everything",
-    images: ["agence1.jpg", "agence2.jpg"],
+    title: "About",
   },
   {
     title: "Contact",
-    description: "To Send a FAX",
-    images: ["contact1.jpg", "contact2.jpg"],
   },
 ];
 
