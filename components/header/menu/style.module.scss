@@ -1,0 +1,61 @@
+.menu {
+  position: fixed;
+  display: flex;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    .el {
+      border-top: 1px solid white;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      perspective: 80vw;
+      transform-origin: top;
+      &:last-of-type {
+        border-bottom: 1px solid white;
+      }
+    }
+    .hoverElement,
+    a,
+    p {
+      color: white;
+      text-transform: uppercase;
+      z-index: 1000;
+      font-size: 3vw;
+      line-height: 3vw;
+      font-weight: 400;
+      margin: 0px;
+      mix-blend-mode: difference;
+      text-decoration: none;
+    }
+    .outer {
+      display: flex;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      pointer-events: none;
+      will-change: top;
+      .inner {
+        background-color: white;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        white-space: nowrap;
+        height: 100%;
+        top: 100%;
+        display: flex;
+        will-change: top;
+      }
+    }
+  }
+}
